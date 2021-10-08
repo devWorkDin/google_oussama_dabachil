@@ -1,0 +1,165 @@
+
+
+
+html{
+	    font-size: 62.5%;
+	}
+
+body{
+	    font-family: sans-serif;
+	        font: 1.6rem;
+
+	        margin: 0;
+	}
+
+h1,h2,h3,p,ul,ol,a,th,figure{
+        text-decoration: none;
+	    margin: 0;
+	    list-style: none;
+	    padding: 0;
+	    font-weight: 400;
+	}
+
+
+*{
+        box-sizing: border-box;
+}
+
+:root{
+    --color--blue:rgb(0, 0, 255);
+    --color--text-grey:rgba(113, 117, 122, 1);
+}
+
+/*Header*/
+header{
+
+}
+header nav ul{
+    align-items: center;
+
+    margin-bottom: 3rem;
+    margin-left: 80vw;
+    width: 20%;
+    padding: .7rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+header nav ul li:last-child img{
+    width: 3rem;
+
+    height: 3rem;
+}
+header nav ul li:nth-child(3) img{
+    width: 3rem;
+
+    height: 4rem;
+}
+/*Main*/
+
+main{
+    width: 50rem;
+    display: block;
+    margin: 0 auto;
+}
+main img{
+    display: block;
+    width: 25rem;
+    margin: 1rem auto;
+}
+
+
+main fieldset{
+    border: none;
+}
+
+
+main fieldset form input[type="text"]{
+    width:100%;
+    height: 3rem;
+    border-radius: 2rem;
+    border: .1rem solid rgba(204, 204, 204, 0.26);
+}
+
+
+main fieldset form input[type="text"]:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0rem .7rem 2.9rem 0rem;
+}
+main .inputs{
+    gap: 1rem;
+    width: 50%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: 2rem auto;
+    
+
+}
+
+
+.inputs *{
+    cursor: pointer;
+    padding: .9rem;
+    border: none;
+    background-color: rgb(248,249,250 );
+}
+.inputs *:hover{
+
+    border: .1rem solid rgba(113, 117, 122, 0.418);
+}
+
+
+main p{
+    text-align: center;
+}
+
+
+main p span{
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+}
+
+
+/*foooter*/
+
+
+footer{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    position: absolute;
+    bottom: 0;
+}
+
+footer p{
+    color: var(--color--text-grey);
+
+    padding: 1.2rem;
+}
+
+
+footer hr{
+   
+    height: .1rem;
+    color: rgba(113, 117, 122, 0.253);
+}
+
+footer .infos-footer ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+}
+
+footer .infos-footer ul li{
+    color: var(--color--text-grey);
+    padding: 1rem;
+}
+
+
+footer .infos-footer ul .last{
+    grid-column: 1/10;
+    grid-row: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+
